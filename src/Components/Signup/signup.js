@@ -28,6 +28,11 @@ function submitData(mydata){
 function SignUp() {
 	const dispatch = useDispatch()
 	const mystate = useSelector(state=>state)
+	const loggedIn = useSelector(state => state.isLoggedIn)
+	console.log(mystate)
+	if(loggedIn){
+		window.location='/';
+	}
 	return (
     <div className="SignUp">
   

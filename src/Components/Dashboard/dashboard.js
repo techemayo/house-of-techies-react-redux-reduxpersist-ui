@@ -7,6 +7,10 @@ function Dashboard() {
 	const dispatch = useDispatch()
 	const loggedIn = useSelector(state => state.isLoggedIn)
 	console.log(mystate)
+	// if(!loggedIn){
+	// 	alert("Please login to continue.");
+	// 	window.location='/login';
+	// }
 	// useSelector(state=>console.log(state))
   return (
     <div className="Dashboard">
